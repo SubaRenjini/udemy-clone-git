@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo span:first-child {
+  color: purple;
+  font-size: 24px;
+}
+
+.cat {
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.nav input {
+  flex-grow: 1;
+  margin: 0 20px;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  max-width: 400px;
+}
+
+.nav-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.icons {
+  font-size: 18px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.categories button {
+  background-color: #d6afff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* === Hero Section with Text Box === */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text-box {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: black;
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  max-width: 400px;
+}
+
+.sale-image img {
+    width: 100%;
+}
+
+.recommended {
+    padding: 10px;
+}
+
+.recommended__container , .popular__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: space-evenly;
+    padding-top:10px;
+}
+
+.course-card {
+    width: 200px;
+}
+
+.course-card img {
+    height:50%;
+    width: 100%;
+}
+
+.topic {
+    padding: 10px;
+}
+
+.topic__container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.topic__container p {
+    background-color: transparent;
+    border: solid black 2px;
+    padding: 10px;
+    flex-grow: 1;
+    flex-basis: 25%;
+}
+
+.popular {
+    padding: 10px;
+}
+
+
+.footer{
+    background-color: black;
+    color: white;
+    padding:30px;
+}
+
+.footer__one{
+    display:flex;
+    gap:30px;
+}
+
+.footer__one p{
+    margin: 20px;
+}
+
+.footer__two{
+    display:flex;
+    justify-content: space-between;
+    margin:20px;
+}
