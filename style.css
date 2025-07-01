@@ -10,9 +10,14 @@ body {
 .nav {
   display: flex;
   align-items: center;
-  padding: 15px 20px;
+  padding: 10px;
   justify-content: space-between;
-  flex-wrap: wrap;
+  border-bottom: solid black 1px;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1;
 }
 
 .logo {
@@ -32,17 +37,48 @@ body {
 
 .nav input {
   flex-grow: 1;
-  margin: 0 20px;
+  margin: 20px;
   padding: 8px;
   border-radius: 20px;
-  border: 1px solid #ccc;
-  max-width: 400px;
+  border: 2px solid black;
+  max-width: 500px;
+  background-color: white;
+}
+
+.nav-links{
+  display: flex;
+  align-items: center;
+  gap:20px;
 }
 
 .nav-links a {
-  margin-right: 15px;
+  display: flex;
+  gap: 15px;
+  margin-top: 5px;
+  align-items: center;
   text-decoration: none;
   color: black;
+}
+
+.mylearning{
+  position: relative;
+  cursor: pointer;
+}
+
+.mylearning__popup{
+  position: absolute;
+  width:100px;
+  padding:20px;
+  background-color: white;
+  border: solid 1px black;
+  border-radius: 20px;
+  top:150%;
+  right:0;
+  display:none;
+}
+
+.mylearning:hover .mylearning__popup{
+  display: block;
 }
 
 .icons {
@@ -67,21 +103,21 @@ body {
 }
 
 /* === Hero Section with Text Box === */
-.hero-banner {
+.banner {
   position: relative;
   width: 100%;
   height: 400px;
   overflow: hidden;
 }
 
-.hero-banner img {
+.banner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.hero-text-box {
+.banner-text-box {
   position: absolute;
   top: 50%;
   left: 10%;
@@ -92,10 +128,6 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   max-width: 400px;
-}
-
-.sale-image img {
-    width: 100%;
 }
 
 .recommended {
