@@ -45,7 +45,7 @@ body {
   background-color: white;
 }
 
-. nav input:hover::placeholder {
+.nav input:hover::placeholder {
   color: transparent;
 }
 
