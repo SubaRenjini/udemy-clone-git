@@ -46,7 +46,7 @@ body {
 }
 
 .nav input:hover::placeholder {
-  color: transparent;
+  color:white;
 }
 
 .nav-links{
@@ -231,7 +231,7 @@ body {
   }
 }
 
-@media screen and (max-width:400px){
+@media screen and (max-width:480px){
   .course-card{
     flex-basis: 40%;
   }
