@@ -45,6 +45,10 @@ body {
   background-color: white;
 }
 
+input:hover::placeholder {
+  color: transparent;
+}
+
 .nav-links{
   display: flex;
   align-items: center;
@@ -95,7 +99,6 @@ body {
 
 .categories button {
   background-color: #d6afff;
-  border: none;
   border-radius: 20px;
   padding: 10px 15px;
   font-weight: bold;
@@ -162,12 +165,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap:20px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding-top:10px;
 }
 
 .course-card {
-    width: 200px;
+    width:20%;
 }
 
 .course-card img {
@@ -218,4 +221,18 @@ body {
     display:flex;
     justify-content: space-between;
     margin:20px;
+}
+
+/* Media queries */
+
+@media screen and (max-width:800px){
+  body{
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width:600px){
+  .course-card{
+    flex-basis: 40%;
+  }
 }
